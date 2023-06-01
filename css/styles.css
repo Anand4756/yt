@@ -44,21 +44,24 @@ body {
   bottom: -2px;
   width: 0;
   height: 2px;
-  background-color: black;
+  background-color: rgb(3, 119, 252);
   transition: width 0.3s ease;
 }
 
 .navbar li a:hover::after {
   width: 100%;
+  
 }
 
 .logo {
   margin-left: 20px;
+  color: rgb(3, 119, 252);
 }
 
 .center-text {
   font-family: 'Source Serif Pro', serif;
   position: relative;
+  
   z-index: -1;
   margin-top: 14%;
   font-size: 50px;
@@ -86,7 +89,7 @@ body {
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(14px);
   transform: translateY(0%);
   transition: transform 0.5s ease;
 
