@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <title>SUBSCRIBE</title>
+
+
+</head>
+
+<body>
+
+<div class="main-section">
+<div class="container">
+	<form class="register">
+		<h3>Register</h3>
+    <input type="name" placeholder="Name" reqired autocomplete='off' />
+		<input type="email" placeholder="Email" reqired autocomplete='off' />
+		<input type="password" placeholder="Password" reqired />
+    <button type="submit" class="btn-reg">Register</button>
+    <p class="reg-text">Already have account? </p>
+    <button type="button" class="btn-login log-in">Login</button>
+		
+	</form>
+	<form class="login">
+		<h3>Welcome</br>Back</h3>
+	
+		<input type="email" placeholder="Email" autocomplete='off' reqired />
+		<input type="password" placeholder="Password" reqired />
+    
+		<button class="btn-login " type="submit">Log In</button>
+    <p class="reg-text">Don't have account? </p>
+    <button class="btn-reg register-back" type="button">Register</button>
+	</form>
+</div>
+</div>
+
+<script>
+  document.querySelector(".log-in").addEventListener("click", function() {
+    
+    document.querySelector(".login").classList.add("active-right");
+    document.querySelector(".register").classList.add("inactive-left")
+    document.querySelector(".register").classList.remove("active-left");
+    document.querySelector(".login").classList.remove("inactive-right");
+    
+    
+  });
+  
+  document.querySelector(".register-back").addEventListener("click", function() {
+    document.querySelector(".register").classList.add("active-left");
+    document.querySelector(".login").classList.add("inactive-right");
+    document.querySelector(".login").classList.remove("active-right");
+    document.querySelector(".register").classList.remove("inactive-left");
+  });
+  
+  
+  </script>
+</body>
+
+</html>
